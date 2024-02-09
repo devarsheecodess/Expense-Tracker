@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+}
+
+body{
+    background-color: white;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container{
+    height: min-content;
+    width: min-content;
+    border-radius: 7px;
+    background-color: rgb(9, 2, 37);
+    display: flex;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.money-dashboard{
+    height: min-content;
+    width: min-content;
+    background-color: wheat;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.my-balance{
+    display: flex;
+    flex-direction: column;
+}
+
+.my-balance h1{
+    margin-top: 30px;
+    font-size: 25px;
+    color: rgb(9, 2, 37);
+}
+
+.my-balance h5{
+    margin-top: 5px;
+    align-self: center;
+    font-size: 20px;
+    color: rgb(9, 2, 37);
+}
+
+.profit-loss{
+    display: flex;
+}
+
+.profit-loss-boxes{
+    height: 50px;
+    width: 100px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.profit-loss-boxes:nth-child(1){
+    background-color: rgb(5, 83, 5);
+}
+
+.profit-loss-boxes:nth-child(2){
+    background-color: rgb(112, 23, 23);
+}
+
+.profit-loss-boxes p{
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+    font-weight: 700;
+    font-size: 12px;
+    color: wheat;
+}
+
+#profit , #loss{
+    margin-top: 7px;
+    font-weight: 800;
+}
+
+.container h2{
+    color: wheat;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+hr{
+    margin-top: 6px;
+}
+
+.history{
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.history-boxes{
+    height: min-content;
+    background-color: wheat;
+    margin: 7px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 5px;
+    color: rgb(33, 26, 13);
+}
+
+#profit{
+    color: rgb(70, 223, 70);
+}
+
+#loss{
+    color: rgb(240, 93, 93);
+}
+
+#displayAMT{
+    color: "";
+}
+
+.line-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.line-2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.line-2 button{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+#history-empty{
+    color: rgb(122, 119, 119);
+    align-self: center;
+}
+
+.fa-trash-can{
+    font-size: 15px;
+    color: black;
+}
+
+.history-boxes h3{
+    margin: 10px;
+}
+
+.activity{
+    color: wheat;
+    font-size: 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.activity p{
+    margin-top: 10px;
+}
+
+#title, #amount, #date{
+    margin-top: 10px;
+    outline: none;
+    padding: 5px;
+    width: 96%;
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+    font-weight: 800;
+    color: rgb(60, 44, 15);
+}
+
+.activity button{
+    width: 50%;
+    height: 30px;
+    padding: 10px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    margin-top: 20px;
+    border-radius: 3px;
+    font-weight: 800;
+    cursor: pointer;
+    color: rgb(60, 44, 15);
+}
+
+.activity button:hover{
+    background-color: wheat;
+}
+
+.radio-btns{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: -10px;
+}
+
+.radio-btns p{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.radio-btns input{
+    cursor: pointer;
+}
+
+#checkCredit, #checkExpense{
+    margin: 10px;
+}
+
+@media only screen and (max-width: 520px){
+    body{
+        background-color: rgb(9, 2, 37);
+    }
+
+    .flexbox{
+        margin-top: 10px;
+    }
+
+    .container{
+        height: min-content;
+        width: 90%;
+    }
+
+    .money-dashboard{
+        height: min-content;
+        width: 90%;
+    }
+
+    input{
+        border: transparent;
+        outline: none;
+    }
+}
